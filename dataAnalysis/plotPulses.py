@@ -58,6 +58,9 @@ def analyze(fin, tag):
 	h_pulse.Draw();
 	ctmp.SaveAs("plots/pulse_%s.pdf" % (tag));
 	ctmp.SaveAs("plots/pulse_%s.png" % (tag));
+        ctmp.SetLogy();
+        ctmp.SaveAs("plots/pulse_%s_log.pdf" % (tag));
+        ctmp.SaveAs("plots/pulse_%s_log.png" % (tag));
 
 ##---------------------------------------
 if __name__ == '__main__':
